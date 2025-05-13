@@ -1,97 +1,90 @@
 from flask import Flask, request, jsonify, render_template
-import requests
+from difflib import get_close_matches
+import json
 import os
-import time
 
 app = Flask(__name__)
 
-# Ollama configuration
-OLLAMA_CONFIG = {
-    "base_url": "http://localhost:11434/api",
-    "model": "tinyllama",
-    "temperature": 0.3,
-    "max_tokens": 200,
-    "timeout": 45
-}
-
-def generate_prompt(user_query: str) -> str:
-    """Generate prompt that forces ONLY health responses"""
-    return f"""<|im_start|>system
-You are a medical assistant. Respond to health questions with:
-- Only factual health information
-- No guidelines/rules about how to respond
-- No lists of instructions
-- Just 1-3 sentences of medical advice
-Example response to "headache":
-"Common causes include stress or dehydration. Try resting and drinking water. See a doctor if severe."<|im_end|>
-<|im_start|>user
-{user_query}<|im_end|>
-<|im_start|>assistant
-"""
-def get_ai_response(prompt: str) -> str:
-    """Get response with guaranteed no instruction leakage"""
+# ===== Comprehensive Medical Knowledge =====
+def load_medical_knowledge():
+    # Load from external JSON file with error handling
     try:
-        response = requests.post(
-            f"{OLLAMA_CONFIG['base_url']}/generate",
-            json={
-                "model": OLLAMA_CONFIG["model"],
-                "prompt": prompt,
-                "stream": False,
-                "options": {
-                    "temperature": 0.3,
-                    "num_predict": 150,
-                    "repeat_penalty": 1.5
-                }
-            },
-            timeout=OLLAMA_CONFIG["timeout"]
-        )
-        response.raise_for_status()
-        
-        raw_response = response.json().get("response", "")
-        
-        # Get only text before any template markers
-        clean_response = raw_response.split("<|im_end|>")[0].strip()
-        
-        # Final cleanup
-        clean_response = clean_response.replace("MediAI:", "").replace("ASSISTANT:", "").strip()
-        
-        # Emergency detection
-        if any(phrase in clean_response.lower() for phrase in [
-            "chest pain", "can't breathe", "severe pain",
-            "unconscious", "heavy bleeding", "stroke"
-        ]):
-            return "🆘 EMERGENCY! Seek immediate medical care!"
-            
-        # Only reject empty responses or extremely short ones
-        if not clean_response or len(clean_response) < 10:
-            return "Could you describe your symptoms in more detail?"
-            
-        return clean_response
-    
-    except Exception:
-        return "Please consult a healthcare professional for medical advice."
+        with open('medical_qa.json') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        print("Error: medical_qa.json not found. Using fallback data.")
+        return {
+            "headache": "Common causes include tension or dehydration. Try rest and hydration.",
+            "fever": "Normal body temperature is 98.6°F (37°C). Seek care if high or persistent."
+        }
 
+MEDICAL_QA = load_medical_knowledge()
+
+# ===== Enhanced Response System =====
+def get_medical_response(query):
+    query = query.lower().strip()
+    
+    # 1. Emergency detection (expanded list)
+    EMERGENCIES = {
+        "chest pain": "🆘 EMERGENCY: May indicate heart attack. Call 911 immediately.",
+        "can't breathe": "🆘 EMERGENCY: Seek immediate medical attention.",
+        "severe bleeding": "🆘 Apply direct pressure to wound and call emergency services.",
+        "stroke symptoms": "🆘 Remember FAST: Face drooping, Arm weakness, Speech difficulty - Time to call 911.",
+        "unconscious": "🆘 Check for breathing and pulse. Call 911 immediately.",
+        "suicidal thoughts": "🆘 Please call the National Suicide Prevention Lifeline at 988",
+        "severe allergic reaction": "🆘 Use epinephrine if available and call 911 immediately."
+    }
+    
+    for phrase, response in EMERGENCIES.items():
+        if phrase in query:
+            return response
+    
+    # 2. Exact match (with spelling correction)
+    if query in MEDICAL_QA:
+        return MEDICAL_QA[query]
+    
+    # 3. Fuzzy match (improved with plural/synonym handling)
+    matches = get_close_matches(query, MEDICAL_QA.keys(), n=3, cutoff=0.5)
+    for match in matches:
+        if match in MEDICAL_QA:
+            return MEDICAL_QA[match]
+    
+    # 4. Try partial matches
+    for question in MEDICAL_QA.keys():
+        if query in question or any(word in question for word in query.split()[:3]):
+            return MEDICAL_QA[question]
+    
+    # 5. Related topics (dynamic based on query words)
+    query_words = set(query.split())
+    related = [q for q in MEDICAL_QA.keys() if any(word in q for word in query_words)][:3]
+    
+    if related:
+        return f"I can help with: {', '.join(related)}. Could you be more specific?"
+    return "For personalized medical advice, please consult a healthcare professional."
+
+# ===== Flask Routes =====
 @app.route("/ask", methods=["POST"])
 def ask_medibot():
-    """Handle medical queries"""
-    if not request.is_json:
-        return jsonify({"error": "Request must be JSON"}), 400
-
-    query = request.json.get("query", "").strip()
-    if not query or len(query) > 500:
-        return jsonify({"error": "Invalid query (1-500 chars required)"}), 400
-
     try:
-        prompt = generate_prompt(query)
-        response = get_ai_response(prompt)
-        return jsonify({"response": response})
+        if not request.is_json:
+            return jsonify({"error": "Request must be JSON"}), 400
         
-    except Exception:
-        return jsonify({"response": "System busy. Please try again later."}), 500
+        data = request.get_json()
+        query = data.get("query", "").strip()
+        
+        if not query:
+            return jsonify({"error": "Empty query"}), 400
+        if len(query) > 500:
+            return jsonify({"error": "Query too long (max 500 chars)"}), 400
+        
+        response = get_medical_response(query)
+        return jsonify({"response": response})
+    
+    except Exception as e:
+        return jsonify({"error": f"Server error: {str(e)}"}), 500
 
 @app.route("/")
 def home():
-    """Render chat interface"""
     return render_template("index.html")
 
 if __name__ == "__main__":

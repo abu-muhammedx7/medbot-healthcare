@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     newChatBtn.addEventListener("click", () => {
         if (confirm("Start a new chat? Your current conversation will be cleared.")) {
             chatBox.innerHTML = '';
-            addMessage("Hello! I'm MediAI. How can I assist you with medical questions today?", "bot");
+            addMessage("Hello! I'm MediBot. How can I assist you with medical questions today?", "bot");
             isFirstMessage = false;
         }
     });
@@ -124,5 +124,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Add initial welcome message
-    addMessage("Hello! I'm MediAI. How can I assist you with medical questions today?", "bot");
+    addMessage("Hello! I'm MediBot. How can I assist you with medical questions today?", "bot");
 });

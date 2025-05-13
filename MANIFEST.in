@@ -1,0 +1,4 @@
+include requirements.txt
+include medical_qa.json
+recursive-include templates *
+recursive-include static *
