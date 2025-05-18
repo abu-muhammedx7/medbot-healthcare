@@ -6,7 +6,7 @@
 This is a Flask-based web application designed for medical question answering. It utilizes a JSON-based knowledge base to provide accurate responses to user questions.
 
 ---
-
+![HandyNote Screenshot](screenshot.png)
 ### 📁 Project Structure
 
 ```

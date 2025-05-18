@@ -1,92 +1,634 @@
 {
-    "headache": "Common causes include tension, dehydration, or eyestrain. Try rest, hydration, and OTC pain relievers. Seek help if severe or persistent.",
-    "migraine": "Consider dark, quiet environment. OTC meds may help. Prescription options available for frequent migraines.",
-    "fever": "Normal body temperature is 98.6°F (37°C). Adults: seek care if >103°F (39.4°C) or lasting >3 days.",
-    "child fever": "Infants under 3 months with 100.4°F (38°C) need immediate evaluation. Older children: watch for dehydration.",
-    "cough": "May indicate cold, flu, or allergies. Honey or cough drops may help. See doctor if lasts >3 weeks or with bloody phlegm.",
-    "dry cough": "Often from postnasal drip or irritation. Humidifiers and lozenges may help. Persistent cough needs evaluation.",
-    "sore throat": "Usually viral. Gargle warm salt water, use throat lozenges. See doctor if severe pain or lasts >1 week.",
-    "strep throat": "Requires antibiotics. Symptoms include fever, white patches on tonsils, and no cough. Needs throat swab test.",
-    "runny nose": "Common with colds/allergies. Antihistamines help allergies. Saline spray may relieve congestion.",
-    "nasal congestion": "Steam inhalation, decongestants (short-term), or nasal saline rinses may help. Chronic congestion needs evaluation.",
-    "sinus pain": "Warm compresses, hydration, and decongestants may help. See doctor if severe pain or lasts >10 days.",
-    "ear pain": "Warm compress may help. Children often need evaluation for ear infections. Adults with persistent pain need exam.",
-    "toothache": "Rinse with warm salt water. Use OTC pain relievers. See dentist ASAP for persistent pain or swelling.",
-    "heartburn": "Avoid spicy/fatty foods. Antacids may help. Frequent heartburn (2+/week) needs medical evaluation.",
-    "indigestion": "Eat smaller meals. Avoid late-night eating. Persistent symptoms may indicate GERD or other conditions.",
-    "nausea": "Sip clear fluids, try ginger. Seek care if persistent or with severe pain/vomiting.",
-    "vomiting": "Stay hydrated with small sips of clear fluids. Seek care if lasts >24h or with signs of dehydration.",
-    "diarrhea": "BRAT diet (bananas, rice, applesauce, toast). Stay hydrated. Seek care if bloody or lasts >2 days.",
-    "constipation": "Increase fiber/water intake. Mild laxatives may help. Chronic constipation needs evaluation.",
-    "stomach pain": "For mild cases, try heat pad and rest. Seek care for severe pain, vomiting, or lasting >24h.",
-    "food poisoning": "Rest and hydration are key. Seek care if bloody diarrhea, high fever, or signs of dehydration.",
-    "back pain": "Ice/heat therapy, gentle stretches. OTC pain relievers may help. Seek care if radiates down legs or causes weakness.",
-    "neck pain": "Gentle stretches, good posture. See doctor if pain radiates to arms or causes numbness/weakness.",
-    "muscle pain": "Rest, ice, OTC pain relievers. Seek care if severe or with swelling/discoloration.",
-    "joint pain": "RICE method (Rest, Ice, Compression, Elevation). Persistent pain needs evaluation.",
-    "knee pain": "Rest, ice, and OTC anti-inflammatories may help. Seek care for swelling, locking, or instability.",
-    "ankle pain": "RICE method. Seek care if unable to bear weight or with significant swelling.",
-    "wrist pain": "Rest and splinting may help. Repetitive strain may need ergonomic adjustments.",
-    "shoulder pain": "Rest and gentle stretches. Seek care if unable to move arm or with severe pain.",
-    "arthritis symptoms": "Joint pain/stiffness, especially mornings. Treatment includes meds, exercise, and sometimes surgery.",
-    "allergy symptoms": "Sneezing, itchy eyes/nose. Antihistamines and nasal steroids help. See allergist for severe cases.",
-    "asthma symptoms": "Wheezing, shortness of breath. Use prescribed inhalers. Seek emergency care for severe attacks.",
-    "high blood pressure": "Lifestyle changes (diet/exercise) help. May need medication. Regular monitoring important.",
-    "low blood pressure": "Increase fluid/salt intake if approved by doctor. Stand up slowly. Evaluate if causing dizziness/falls.",
-    "cholesterol": "Diet low in saturated fats helps. Exercise and medications may be needed for high levels.",
-    "diabetes symptoms": "Increased thirst/urination, fatigue. Requires blood testing for diagnosis.",
-    "low blood sugar": "Consume 15g fast-acting carbs (juice, glucose tabs). Recheck in 15 minutes.",
-    "thyroid problems": "Symptoms vary (weight changes, fatigue). Blood tests needed for diagnosis.",
-    "anemia symptoms": "Fatigue, pale skin, shortness of breath. Blood tests determine cause and treatment.",
-    "depression symptoms": "Persistent sadness, loss of interest. Counseling and/or medication can help.",
-    "anxiety symptoms": "Excessive worry, physical symptoms. Therapy and relaxation techniques help.",
-    "insomnia": "Good sleep hygiene helps. Avoid screens before bed. Chronic insomnia may need evaluation.",
-    "fatigue": "Ensure adequate sleep, nutrition, hydration. Persistent fatigue needs medical evaluation.",
-    "dizziness": "Sit/lie down when dizzy. Hydrate. Seek care if recurrent or with other neurological symptoms.",
-    "vertigo": "Often from inner ear issues. Specific maneuvers can help. See doctor for recurrent episodes.",
-    "head injury": "Seek immediate care for loss of consciousness, confusion, or worsening symptoms.",
-    "sunburn": "Cool compresses, aloe vera, hydration. Seek care for blistering or fever.",
-    "rash": "Keep clean/dry. Hydrocortisone cream for itch. Seek care if widespread or with fever.",
-    "hives": "Antihistamines help. Seek care if with swelling of face/lips or breathing difficulty.",
-    "poison ivy": "Wash area, use calamine lotion. Oral antihistamines help itching. Severe cases may need steroids.",
-    "burn treatment": "Cool water (not ice), cover loosely. Seek care for large burns or on face/hands/genitals.",
-    "cut treatment": "Clean with water, apply pressure for bleeding. Seek care for deep wounds or signs of infection.",
-    "sprain": "RICE method (Rest, Ice, Compression, Elevation). Seek care if unable to bear weight.",
-    "strain": "Rest, ice, gentle stretching. OTC pain relievers may help.",
-    "pink eye": "Warm compresses help. Viral cases resolve in 1-2 weeks. Bacterial needs antibiotic drops.",
-    "stye": "Warm compresses 4x/day. Usually resolves in 1-2 weeks. See doctor if persistent.",
-    "vision changes": "Sudden changes need immediate evaluation. Gradual changes need eye exam.",
-    "urinary pain": "May indicate UTI. Increased fluids help. See doctor for testing/treatment.",
-    "frequent urination": "May indicate UTI, diabetes, or other conditions. Needs evaluation.",
-    "menstrual cramps": "Heat, OTC pain relievers, exercise may help. Severe pain needs evaluation.",
-    "pregnancy symptoms": "Missed period, nausea, breast changes. Home tests detect hCG hormone.",
-    "morning sickness": "Small frequent meals, ginger may help. Severe cases need medical attention.",
-    "breast pain": "Often hormonal. See doctor for lumps, skin changes, or persistent pain.",
-    "erectile dysfunction": "May indicate vascular issues. Lifestyle changes and medications can help.",
-    "STD symptoms": "Vary by infection. Testing needed for diagnosis. Many are treatable.",
-    "cold sores": "Antiviral creams may help. Avoid touching/spreading. Usually resolve in 7-10 days.",
-    "athlete's foot": "Antifungal creams/sprays. Keep feet dry. May take 4 weeks to clear.",
-    "ringworm": "Antifungal creams. Keep area dry. See doctor if widespread or not improving.",
-    "flu symptoms": "Fever, body aches, fatigue. Rest and fluids are key. Antivirals may help if started early.",
-    "cold symptoms": "Runny nose, sore throat. Rest and fluids help. Usually resolves in 7-10 days.",
-    "COVID symptoms": "Fever, cough, loss of taste/smell. Testing needed for diagnosis. Isolate if positive.",
-    "vaccine side effects": "Mild fever, soreness common. Serious reactions rare. Report severe symptoms.",
-    "smoking cessation": "Nicotine replacement, medications, counseling can help. Quitting has immediate benefits.",
-    "weight loss": "Healthy diet and exercise. Unexplained weight loss needs medical evaluation.",
-    "healthy diet": "Focus on fruits, vegetables, whole grains, lean proteins. Limit processed foods.",
-    "exercise benefits": "30 minutes daily improves cardiovascular health, mood, and longevity.",
-    "stress management": "Exercise, meditation, adequate sleep help. Chronic stress needs attention.",
-    "high cholesterol diet": "Limit saturated/trans fats. Increase fiber. Fish and nuts may help.",
-    "heart healthy diet": "Focus on vegetables, whole grains, lean proteins. Limit salt and saturated fats.",
-    "diabetic diet": "Balance carbohydrates. Focus on fiber-rich foods. Regular meal timing helps.",
-    "blood pressure diet": "DASH diet helps: fruits, vegetables, low-fat dairy, reduced sodium.",
-    "prenatal vitamins": "Contain folic acid, iron, calcium. Important before/during pregnancy.",
-    "vitamin D": "Sunlight exposure helps. Supplements may be needed, especially in winter.",
-    "probiotics": "May help gut health. Found in yogurt, supplements. Effects vary by strain.",
-    "hydration": "Aim for 8 glasses water daily. More needed with exercise/heat.",
-    "sleep hygiene": "Regular schedule, dark/quiet room, limit screens before bed.",
-    "sun protection": "SPF 30+, reapply every 2 hours. Seek shade 10am-4pm.",
-    "tick bite": "Remove with tweezers, clean area. Watch for rash/fever (Lyme disease signs).",
-    "animal bite": "Clean thoroughly. Seek care for deep wounds or unknown animal vaccination status.",
-    "first aid kit": "Should include bandages, gauze, antiseptic, gloves, pain relievers, etc."
+  "symptoms": [
+    {
+      "name": "headache",
+      "definition": "Pain in the head, often caused by tension, dehydration, or eyestrain.",
+      "causes": ["stress", "lack of sleep", "caffeine withdrawal", "sinus pressure"],
+      "examples": ["tension headache (band-like pressure)", "migraine (throbbing pain with nausea)"],
+      "advice": "Rest, hydration, OTC pain relievers (ibuprofen, acetaminophen). Seek help if severe or persistent."
+    },
+    {
+      "name": "migraine",
+      "definition": "Severe, recurring headache often with nausea, light sensitivity, or aura.",
+      "causes": ["stress", "hormonal changes", "certain foods (chocolate, aged cheese)"],
+      "examples": ["visual disturbances before pain", "vomiting"],
+      "advice": "Dark, quiet environment. OTC meds (aspirin, naproxen). Prescription triptans for frequent migraines."
+    },
+    {
+      "name": "fever",
+      "definition": "Elevated body temperature (>100.4°F or 38°C).",
+      "causes": ["infections (flu, COVID)", "inflammatory conditions"],
+      "examples": ["chills", "sweating", "fatigue"],
+      "advice": "Adults: seek care if >103°F (39.4°C) or lasting >3 days."
+    },
+    {
+      "name": "child fever",
+      "definition": "Elevated temperature in infants/children.",
+      "causes": ["viral/bacterial infections", "teething (low-grade)"],
+      "examples": ["irritability", "reduced appetite"],
+      "advice": "Infants <3 months with 100.4°F (38°C) need immediate care. Older kids: monitor hydration."
+    },
+    {
+      "name": "cough",
+      "definition": "Sudden expulsion of air to clear throat/lungs.",
+      "causes": ["cold", "flu", "allergies", "asthma"],
+      "examples": ["dry cough (tickling sensation)", "wet cough (phlegm)"],
+      "advice": "Honey or cough drops may help. See doctor if lasts >3 weeks or with bloody phlegm."
+    },
+    {
+      "name": "dry cough",
+      "definition": "Cough without mucus production.",
+      "causes": ["postnasal drip", "irritants (smoke, dust)", "acid reflux"],
+      "examples": ["persistent tickle in throat", "worse at night"],
+      "advice": "Humidifiers and lozenges may help. Persistent cough needs evaluation."
+    },
+    {
+      "name": "sore throat",
+      "definition": "Pain or irritation in the throat.",
+      "causes": ["viral infections", "bacterial infections (strep)", "allergies"],
+      "examples": ["scratchy feeling", "pain when swallowing"],
+      "advice": "Gargle warm salt water, use throat lozenges. See doctor if severe pain or lasts >1 week."
+    },
+    {
+      "name": "strep throat",
+      "definition": "Bacterial infection causing throat inflammation.",
+      "causes": ["Streptococcus bacteria"],
+      "examples": ["white patches on tonsils", "fever", "no cough"],
+      "advice": "Requires antibiotics. Needs throat swab test."
+    },
+    {
+      "name": "runny nose",
+      "definition": "Excess nasal drainage.",
+      "causes": ["colds", "allergies", "sinus infections"],
+      "examples": ["clear mucus (allergies)", "thick yellow/green mucus (infection)"],
+      "advice": "Antihistamines help allergies. Saline spray may relieve congestion."
+    },
+    {
+      "name": "nasal congestion",
+      "definition": "Blocked or stuffy nose.",
+      "causes": ["colds", "allergies", "deviated septum"],
+      "examples": ["difficulty breathing through nose", "snoring"],
+      "advice": "Steam inhalation, decongestants (short-term). Chronic congestion needs evaluation."
+    },
+    {
+      "name": "sinus pain",
+      "definition": "Pressure or pain in sinus cavities.",
+      "causes": ["sinus infection", "allergies", "air pressure changes"],
+      "examples": ["pain around eyes/cheeks", "worse when bending forward"],
+      "advice": "Warm compresses, hydration, decongestants. See doctor if severe pain or lasts >10 days."
+    },
+    {
+      "name": "ear pain",
+      "definition": "Discomfort in the ear.",
+      "causes": ["ear infection", "wax buildup", "sinus pressure"],
+      "examples": ["sharp pain (infection)", "fullness sensation (wax)"],
+      "advice": "Warm compress may help. Children often need evaluation for ear infections."
+    },
+    {
+      "name": "toothache",
+      "definition": "Pain in or around a tooth.",
+      "causes": ["cavity", "abscess", "gum disease"],
+      "examples": ["throbbing pain", "sensitivity to hot/cold"],
+      "advice": "Rinse with warm salt water. See dentist ASAP for persistent pain or swelling."
+    },
+    {
+      "name": "heartburn",
+      "definition": "Burning sensation in chest from acid reflux.",
+      "causes": ["spicy/fatty foods", "pregnancy", "hiatal hernia"],
+      "examples": ["worse after eating", "bitter taste in mouth"],
+      "advice": "Avoid trigger foods. Antacids may help. Frequent heartburn (2+/week) needs evaluation."
+    },
+    {
+      "name": "indigestion",
+      "definition": "Discomfort in upper abdomen after eating.",
+      "causes": ["overeating", "greasy foods", "stress"],
+      "examples": ["bloating", "belching"],
+      "advice": "Eat smaller meals. Avoid late-night eating. Persistent symptoms may indicate GERD."
+    },
+    {
+      "name": "nausea",
+      "definition": "Urge to vomit.",
+      "causes": ["food poisoning", "motion sickness", "pregnancy"],
+      "examples": ["queasy stomach", "loss of appetite"],
+      "advice": "Sip clear fluids, try ginger. Seek care if persistent or with severe pain/vomiting."
+    },
+    {
+      "name": "vomiting",
+      "definition": "Forceful expulsion of stomach contents.",
+      "causes": ["viruses", "food poisoning", "migraines"],
+      "examples": ["projectile vomiting (infants)", "with fever (infection)"],
+      "advice": "Stay hydrated with small sips of clear fluids. Seek care if lasts >24h or dehydration signs."
+    },
+    {
+      "name": "diarrhea",
+      "definition": "Frequent, loose, watery stools.",
+      "causes": ["viruses", "food intolerance", "antibiotics"],
+      "examples": ["acute (1-2 days)", "chronic (>4 weeks)"],
+      "advice": "BRAT diet (bananas, rice, applesauce, toast). Seek care if bloody or lasts >2 days."
+    },
+    {
+      "name": "constipation",
+      "definition": "Infrequent, hard stools.",
+      "causes": ["low fiber", "dehydration", "medications"],
+      "examples": ["straining", "bloating"],
+      "advice": "Increase fiber/water intake. Mild laxatives may help. Chronic constipation needs evaluation."
+    },
+    {
+      "name": "stomach pain",
+      "definition": "Discomfort in the abdominal area.",
+      "causes": ["gas", "indigestion", "appendicitis"],
+      "examples": ["cramps", "sharp pain (serious)"],
+      "advice": "For mild cases, try heat pad and rest. Seek care for severe pain, vomiting, or lasting >24h."
+    },
+    {
+      "name": "food poisoning",
+      "definition": "Illness from contaminated food.",
+      "causes": ["bacteria (Salmonella)", "viruses (Norovirus)"],
+      "examples": ["nausea", "diarrhea", "fever"],
+      "advice": "Rest and hydration are key. Seek care if bloody diarrhea, high fever, or dehydration signs."
+    },
+    {
+      "name": "back pain",
+      "definition": "Discomfort in the upper, middle, or lower back.",
+      "causes": ["muscle strain", "herniated disc", "poor posture"],
+      "examples": ["acute (sudden injury)", "chronic (ongoing)"],
+      "advice": "Ice/heat therapy, gentle stretches. Seek care if radiates down legs or causes weakness."
+    },
+    {
+      "name": "neck pain",
+      "definition": "Discomfort in the cervical spine area.",
+      "causes": ["poor posture", "whiplash", "arthritis"],
+      "examples": ["stiffness", "radiating pain to shoulders"],
+      "advice": "Gentle stretches, good posture. See doctor if pain radiates to arms or causes numbness."
+    },
+    {
+      "name": "muscle pain",
+      "definition": "Aching or soreness in muscles.",
+      "causes": ["overuse", "injury", "infection (flu)"],
+      "examples": ["delayed onset soreness (after exercise)", "localized tenderness"],
+      "advice": "Rest, ice, OTC pain relievers. Seek care if severe or with swelling/discoloration."
+    },
+    {
+      "name": "joint pain",
+      "definition": "Discomfort where bones meet (knees, hips, etc.).",
+      "causes": ["arthritis", "injury", "gout"],
+      "examples": ["swelling", "reduced range of motion"],
+      "advice": "RICE method (Rest, Ice, Compression, Elevation). Persistent pain needs evaluation."
+    },
+    {
+      "name": "knee pain",
+      "definition": "Pain in or around the knee joint.",
+      "causes": ["ligament injury", "arthritis", "overuse"],
+      "examples": ["popping sound (meniscus tear)", "swelling (bursitis)"],
+      "advice": "Rest, ice, and OTC anti-inflammatories may help. Seek care for swelling, locking, or instability."
+    },
+    {
+      "name": "ankle pain",
+      "definition": "Discomfort in the ankle joint.",
+      "causes": ["sprain", "arthritis", "tendonitis"],
+      "examples": ["bruising (injury)", "stiffness (arthritis)"],
+      "advice": "RICE method. Seek care if unable to bear weight or with significant swelling."
+    },
+    {
+      "name": "wrist pain",
+      "definition": "Pain in the wrist joint.",
+      "causes": ["carpal tunnel", "repetitive strain", "injury"],
+      "examples": ["numbness (nerve compression)", "clicking (tendon issue)"],
+      "advice": "Rest and splinting may help. Repetitive strain may need ergonomic adjustments."
+    },
+    {
+      "name": "shoulder pain",
+      "definition": "Discomfort in the shoulder joint.",
+      "causes": ["rotator cuff injury", "frozen shoulder", "bursitis"],
+      "examples": ["pain when lifting arm", "clicking sensation"],
+      "advice": "Rest and gentle stretches. Seek care if unable to move arm or with severe pain."
+    },
+    {
+      "name": "arthritis symptoms",
+      "definition": "Joint inflammation causing pain/stiffness.",
+      "causes": ["osteoarthritis (wear-and-tear)", "rheumatoid (autoimmune)"],
+      "examples": ["morning stiffness", "joint deformity (severe cases)"],
+      "advice": "Treatment includes meds, exercise, and sometimes surgery."
+    },
+    {
+      "name": "allergy symptoms",
+      "definition": "Immune response to allergens.",
+      "causes": ["pollen", "dust mites", "pet dander"],
+      "examples": ["sneezing", "itchy eyes/nose"],
+      "advice": "Antihistamines and nasal steroids help. See allergist for severe cases."
+    },
+    {
+      "name": "asthma symptoms",
+      "definition": "Chronic airway inflammation.",
+      "causes": ["allergens", "exercise", "cold air"],
+      "examples": ["wheezing", "shortness of breath"],
+      "advice": "Use prescribed inhalers. Seek emergency care for severe attacks."
+    },
+    {
+      "name": "high blood pressure",
+      "definition": "Elevated force of blood against artery walls (>130/80 mmHg).",
+      "causes": ["diet (high salt)", "obesity", "genetics"],
+      "examples": ["often asymptomatic", "headaches (severe cases)"],
+      "advice": "Lifestyle changes (diet/exercise) help. May need medication."
+    },
+    {
+      "name": "low blood pressure",
+      "definition": "Low force of blood (<90/60 mmHg).",
+      "causes": ["dehydration", "medications", "heart issues"],
+      "examples": ["dizziness", "fainting"],
+      "advice": "Increase fluid/salt intake if approved by doctor. Stand up slowly."
+    },
+    {
+      "name": "cholesterol",
+      "definition": "Waxy substance in blood (LDL = bad, HDL = good).",
+      "causes": ["diet (saturated fats)", "genetics", "lack of exercise"],
+      "examples": ["no symptoms", "xanthomas (fatty deposits in skin)"],
+      "advice": "Diet low in saturated fats helps. Exercise and medications may be needed."
+    },
+    {
+      "name": "diabetes symptoms",
+      "definition": "High blood sugar levels.",
+      "causes": ["insulin resistance (Type 2)", "autoimmune (Type 1)"],
+      "examples": ["increased thirst/urination", "fatigue"],
+      "advice": "Requires blood testing for diagnosis. Manage with diet, exercise, and/or insulin."
+    },
+    {
+      "name": "low blood sugar",
+      "definition": "Blood glucose <70 mg/dL (hypoglycemia).",
+      "causes": ["too much insulin", "skipping meals"],
+      "examples": ["shakiness", "confusion"],
+      "advice": "Consume 15g fast-acting carbs (juice, glucose tabs). Recheck in 15 minutes."
+    },
+    {
+      "name": "thyroid problems",
+      "definition": "Over- or underactive thyroid gland.",
+      "causes": ["Hashimoto’s (underactive)", "Graves’ disease (overactive)"],
+      "examples": ["weight changes", "fatigue", "hair loss"],
+      "advice": "Blood tests needed for diagnosis. Treatment varies (medication, surgery)."
+    },
+    {
+      "name": "anemia symptoms",
+      "definition": "Low red blood cell count.",
+      "causes": ["iron deficiency", "vitamin B12 deficiency", "chronic disease"],
+      "examples": ["pale skin", "shortness of breath"],
+      "advice": "Blood tests determine cause and treatment (iron supplements, dietary changes)."
+    },
+    {
+      "name": "depression symptoms",
+      "definition": "Persistent sadness/loss of interest.",
+      "causes": ["chemical imbalance", "trauma", "genetics"],
+      "examples": ["hopelessness", "sleep/appetite changes"],
+      "advice": "Counseling and/or medication can help. Seek professional support."
+    },
+    {
+      "name": "anxiety symptoms",
+      "definition": "Excessive worry or fear.",
+      "causes": ["stress", "genetics", "trauma"],
+      "examples": ["racing heart", "panic attacks"],
+      "advice": "Therapy and relaxation techniques help. Medication may be needed."
+    },
+    {
+      "name": "insomnia",
+      "definition": "Difficulty falling/staying asleep.",
+      "causes": ["stress", "caffeine", "irregular schedule"],
+      "examples": ["fatigue", "daytime sleepiness"],
+      "advice": "Good sleep hygiene helps. Avoid screens before bed. Chronic insomnia may need evaluation."
+    },
+    {
+      "name": "fatigue",
+      "definition": "Persistent tiredness or lack of energy.",
+      "causes": ["poor sleep", "anemia", "chronic illness"],
+      "examples": ["exhaustion despite rest", "brain fog"],
+      "advice": "Ensure adequate sleep, nutrition, hydration. Persistent fatigue needs medical evaluation."
+    },
+    {
+      "name": "dizziness",
+      "definition": "Lightheadedness or unsteadiness.",
+      "causes": ["dehydration", "low blood sugar", "inner ear issues"],
+      "examples": ["room spinning (vertigo)", "feeling faint"],
+      "advice": "Sit/lie down when dizzy. Hydrate. Seek care if recurrent or with neurological symptoms."
+    },
+    {
+      "name": "vertigo",
+      "definition": "Sensation of spinning or motion.",
+      "causes": ["inner ear problems (BPPV)", "Migraine-associated"],
+      "examples": ["worse with head movement", "nausea"],
+      "advice": "Specific maneuvers (Epley) can help. See doctor for recurrent episodes."
+    },
+    {
+      "name": "head injury",
+      "definition": "Trauma to the skull/brain.",
+      "causes": ["falls", "sports injuries", "accidents"],
+      "examples": ["concussion (confusion)", "skull fracture (severe)"],
+      "advice": "Seek immediate care for loss of consciousness, confusion, or worsening symptoms."
+    },
+    {
+      "name": "sunburn",
+      "definition": "Skin damage from UV radiation.",
+      "causes": ["prolonged sun exposure", "lack of sunscreen"],
+      "examples": ["redness", "peeling skin"],
+      "advice": "Cool compresses, aloe vera, hydration. Seek care for blistering or fever."
+    },
+    {
+      "name": "rash",
+      "definition": "Skin irritation or inflammation.",
+      "causes": ["allergies", "infections", "autoimmune conditions"],
+      "examples": ["hives (raised welts)", "eczema (dry patches)"],
+      "advice": "Keep clean/dry. Hydrocortisone cream for itch. Seek care if widespread or with fever."
+    },
+    {
+      "name": "hives",
+      "definition": "Raised, itchy welts on skin.",
+      "causes": ["allergies (food, medication)", "stress"],
+      "examples": ["red bumps", "migrating patches"],
+      "advice": "Antihistamines help. Seek care if with swelling of face/lips or breathing difficulty."
+    },
+    {
+      "name": "poison ivy",
+      "definition": "Allergic reaction to urushiol oil.",
+      "causes": ["contact with poison ivy/oak/sumac"],
+      "examples": ["itchy red rash", "blisters"],
+      "advice": "Wash area, use calamine lotion. Oral antihistamines help itching. Severe cases may need steroids."
+    },
+    {
+      "name": "burn treatment",
+      "definition": "Skin damage from heat/chemicals.",
+      "causes": ["hot liquids", "fire", "chemical exposure"],
+      "examples": ["first-degree (redness)", "third-degree (white/blackened skin)"],
+      "advice": "Cool water (not ice), cover loosely. Seek care for large burns or on face/hands/genitals."
+    },
+    {
+      "name": "cut treatment",
+      "definition": "Break in the skin.",
+      "causes": ["sharp objects", "falls"],
+      "examples": ["minor (paper cut)", "deep (knife wound)"],
+      "advice": "Clean with water, apply pressure for bleeding. Seek care for deep wounds or signs of infection."
+    },
+    {
+      "name": "sprain",
+      "definition": "Ligament stretch/tear.",
+      "causes": ["twisting injury", "falls"],
+      "examples": ["ankle sprain", "wrist sprain"],
+      "advice": "RICE method (Rest, Ice, Compression, Elevation). Seek care if unable to bear weight."
+    },
+    {
+      "name": "strain",
+      "definition": "Muscle/tendon stretch/tear.",
+      "causes": ["overuse", "heavy lifting"],
+      "examples": ["pulled hamstring", "back strain"],
+      "advice": "Rest, ice, gentle stretching. OTC pain relievers may help."
+    },
+    {
+      "name": "pink eye",
+      "definition": "Conjunctivitis (eye inflammation).",
+      "causes": ["viruses", "bacteria", "allergies"],
+      "examples": ["redness", "discharge"],
+      "advice": "Warm compresses help. Viral cases resolve in 1-2 weeks. Bacterial needs antibiotic drops."
+    },
+    {
+      "name": "stye",
+      "definition": "Infected oil gland on eyelid.",
+      "causes": ["bacteria", "blocked gland"],
+      "examples": ["red bump", "tenderness"],
+      "advice": "Warm compresses 4x/day. Usually resolves in 1-2 weeks. See doctor if persistent."
+    },
+    {
+      "name": "vision changes",
+      "definition": "Altered eyesight (blurry, double, etc.).",
+      "causes": ["refractive errors", "cataracts", "glaucoma"],
+      "examples": ["difficulty reading", "halos around lights"],
+      "advice": "Sudden changes need immediate evaluation. Gradual changes need eye exam."
+    },
+    {
+      "name": "urinary pain",
+      "definition": "Discomfort during urination.",
+      "causes": ["UTI", "STIs", "kidney stones"],
+      "examples": ["burning sensation", "frequent urges"],
+      "advice": "May indicate UTI. Increased fluids help. See doctor for testing/treatment."
+    },
+    {
+      "name": "frequent urination",
+      "definition": "Urinating more often than usual.",
+      "causes": ["UTI", "diabetes", "prostate issues"],
+      "examples": ["waking up at night to pee", "urgent need to go"],
+      "advice": "May indicate UTI, diabetes, or other conditions. Needs evaluation."
+    },
+    {
+      "name": "menstrual cramps",
+      "definition": "Pain during menstruation.",
+      "causes": ["uterine contractions", "endometriosis"],
+      "examples": ["lower abdominal pain", "backache"],
+      "advice": "Heat, OTC pain relievers, exercise may help. Severe pain needs evaluation."
+    },
+    {
+      "name": "pregnancy symptoms",
+      "definition": "Early signs of pregnancy.",
+      "causes": ["hormonal changes"],
+      "examples": ["missed period", "morning sickness"],
+      "advice": "Home tests detect hCG hormone. Confirm with doctor."
+    },
+    {
+      "name": "morning sickness",
+      "definition": "Nausea/vomiting in pregnancy.",
+      "causes": ["hormonal changes"],
+      "examples": ["worse on empty stomach", "triggered by smells"],
+      "advice": "Small frequent meals, ginger may help. Severe cases need medical attention."
+    },
+    {
+      "name": "breast pain",
+      "definition": "Discomfort in breast tissue.",
+      "causes": ["hormonal changes", "cysts", "infection"],
+      "examples": ["cyclical (with periods)", "localized lump"],
+      "advice": "Often hormonal. See doctor for lumps, skin changes, or persistent pain."
+    },
+    {
+      "name": "erectile dysfunction",
+      "definition": "Difficulty achieving/maintaining erection.",
+      "causes": ["vascular issues", "stress", "diabetes"],
+      "examples": ["occasional", "chronic"],
+      "advice": "May indicate vascular issues. Lifestyle changes and medications can help."
+    },
+    {
+      "name": "STD symptoms",
+      "definition": "Signs of sexually transmitted infections.",
+      "causes": ["bacteria", "viruses", "parasites"],
+      "examples": ["genital sores", "discharge", "pain"],
+      "advice": "Vary by infection. Testing needed for diagnosis. Many are treatable."
+    },
+    {
+      "name": "cold sores",
+      "definition": "Blisters caused by herpes simplex virus.",
+      "causes": ["HSV-1"],
+      "examples": ["lip sores", "tingling before outbreak"],
+      "advice": "Antiviral creams may help. Avoid touching/spreading. Usually resolve in 7-10 days."
+    },
+    {
+      "name": "athlete's foot",
+      "definition": "Fungal infection of the feet.",
+      "causes": ["damp environments", "shared showers"],
+      "examples": ["itchy, scaly skin", "cracking between toes"],
+      "advice": "Antifungal creams/sprays. Keep feet dry. May take 4 weeks to clear."
+    },
+    {
+      "name": "ringworm",
+      "definition": "Fungal skin infection (not a worm).",
+      "causes": ["Tinea fungus"],
+      "examples": ["circular red rash", "scaly patches"],
+      "advice": "Antifungal creams. Keep area dry. See doctor if widespread or not improving."
+    },
+    {
+      "name": "flu symptoms",
+      "definition": "Viral respiratory illness.",
+      "causes": ["influenza viruses"],
+      "examples": ["fever", "body aches", "fatigue"],
+      "advice": "Rest and fluids are key. Antivirals may help if started early."
+    },
+    {
+      "name": "cold symptoms",
+      "definition": "Mild viral upper respiratory infection.",
+      "causes": ["rhinoviruses"],
+      "examples": ["runny nose", "sore throat"],
+      "advice": "Rest and fluids help. Usually resolves in 7-10 days."
+    },
+    {
+      "name": "COVID symptoms",
+      "definition": "Illness caused by SARS-CoV-2 virus.",
+      "causes": ["coronavirus"],
+      "examples": ["fever", "loss of taste/smell", "shortness of breath"],
+      "advice": "Testing needed for diagnosis. Isolate if positive."
+    },
+    {
+      "name": "vaccine side effects",
+      "definition": "Reactions after vaccination.",
+      "causes": ["immune response"],
+      "examples": ["sore arm", "mild fever"],
+      "advice": "Mild fever, soreness common. Serious reactions rare. Report severe symptoms."
+    },
+    {
+      "name": "smoking cessation",
+      "definition": "Process of quitting tobacco.",
+      "causes": ["nicotine addiction"],
+      "examples": ["cravings", "irritability"],
+      "advice": "Nicotine replacement, medications, counseling can help. Quitting has immediate benefits."
+    },
+    {
+      "name": "weight loss",
+      "definition": "Reduction in body mass.",
+      "causes": ["diet/exercise", "illness", "stress"],
+      "examples": ["intentional (healthy)", "unintentional (concerning)"],
+      "advice": "Healthy diet and exercise. Unexplained weight loss needs medical evaluation."
+    },
+    {
+      "name": "healthy diet",
+      "definition": "Balanced nutrition for wellness.",
+      "causes": ["lifestyle choice"],
+      "examples": ["Mediterranean diet", "plant-based eating"],
+      "advice": "Focus on fruits, vegetables, whole grains, lean proteins. Limit processed foods."
+    },
+    {
+      "name": "exercise benefits",
+      "definition": "Physical activity improving health.",
+      "causes": ["voluntary movement"],
+      "examples": ["cardio (running)", "strength training"],
+      "advice": "30 minutes daily improves cardiovascular health, mood, and longevity."
+    },
+    {
+      "name": "stress management",
+      "definition": "Techniques to reduce stress.",
+      "causes": ["work", "relationships", "finances"],
+      "examples": ["meditation", "yoga"],
+      "advice": "Exercise, meditation, adequate sleep help. Chronic stress needs attention."
+    },
+    {
+      "name": "high cholesterol diet",
+      "definition": "Eating habits affecting cholesterol levels.",
+      "causes": ["saturated/trans fats"],
+      "examples": ["fast food", "fried foods"],
+      "advice": "Limit saturated/trans fats. Increase fiber. Fish and nuts may help."
+    },
+    {
+      "name": "heart healthy diet",
+      "definition": "Eating to support cardiovascular health.",
+      "causes": ["preventive care"],
+      "examples": ["oats", "salmon"],
+      "advice": "Focus on vegetables, whole grains, lean proteins. Limit salt and saturated fats."
+    },
+    {
+      "name": "diabetic diet",
+      "definition": "Meal plan to manage blood sugar.",
+      "causes": ["diabetes management"],
+      "examples": ["low-glycemic foods", "portion control"],
+      "advice": "Balance carbohydrates. Focus on fiber-rich foods. Regular meal timing helps."
+    },
+    {
+      "name": "blood pressure diet",
+      "definition": "Eating to control hypertension.",
+      "causes": ["DASH diet principles"],
+      "examples": ["low-sodium meals", "potassium-rich foods"],
+      "advice": "DASH diet helps: fruits, vegetables, low-fat dairy, reduced sodium."
+    },
+    {
+      "name": "prenatal vitamins",
+      "definition": "Supplements for pregnancy health.",
+      "causes": ["fetal development needs"],
+      "examples": ["folic acid", "iron"],
+      "advice": "Contain folic acid, iron, calcium. Important before/during pregnancy."
+    },
+    {
+      "name": "vitamin D",
+      "definition": "Nutrient for bone/immune health.",
+      "causes": ["sun exposure", "diet"],
+      "examples": ["fatty fish", "fortified milk"],
+      "advice": "Sunlight exposure helps. Supplements may be needed, especially in winter."
+    },
+    {
+      "name": "probiotics",
+      "definition": "Beneficial bacteria for gut health.",
+      "causes": ["supplementation", "fermented foods"],
+      "examples": ["yogurt", "kefir"],
+      "advice": "May help gut health. Found in yogurt, supplements. Effects vary by strain."
+    },
+    {
+      "name": "hydration",
+      "definition": "Maintaining adequate body fluids.",
+      "causes": ["water intake"],
+      "examples": ["clear urine", "reduced thirst"],
+      "advice": "Aim for 8 glasses water daily. More needed with exercise/heat."
+    },
+    {
+      "name": "sleep hygiene",
+      "definition": "Habits for quality sleep.",
+      "causes": ["routine", "environment"],
+      "examples": ["consistent bedtime", "dark room"],
+      "advice": "Regular schedule, dark/quiet room, limit screens before bed."
+    },
+    {
+      "name": "sun protection",
+      "definition": "Preventing UV damage.",
+      "causes": ["sunscreen use", "protective clothing"],
+      "examples": ["broad-spectrum SPF 30+", "hats"],
+      "advice": "SPF 30+, reapply every 2 hours. Seek shade 10am-4pm."
+    },
+    {
+      "name": "tick bite",
+      "definition": "Bite from a tick (Lyme disease risk).",
+      "causes": ["outdoor exposure"],
+      "examples": ["bullseye rash (Lyme)", "fever"],
+      "advice": "Remove with tweezers, clean area. Watch for rash/fever (Lyme disease signs)."
+    },
+    {
+      "name": "animal bite",
+      "definition": "Injury from animal teeth.",
+      "causes": ["pets", "wild animals"],
+      "examples": ["puncture wounds", "bleeding"],
+      "advice": "Clean thoroughly. Seek care for deep wounds or unknown animal vaccination status."
+    },
+    {
+      "name": "first aid kit",
+      "definition": "Supplies for minor medical care.",
+      "causes": ["preparedness"],
+      "examples": ["bandages", "antiseptic wipes"],
+      "advice": "Should include bandages, gauze, antiseptic, gloves, pain relievers, etc."
+    }
+  ]
 }
